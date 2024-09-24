@@ -1,6 +1,4 @@
 # URL-Shortner
-<<<<<<< HEAD
-
 A simple and efficient URL shortener built with Python. This project allows users to convert long URLs into shorter, more manageable links, making it easier to share and track URLs.
 
 ## Features
@@ -26,15 +24,15 @@ To set up the project locally, follow these steps:
       git clone https://github.com/satyam-64136/URL-Shortner.git
 
 2. Navigate to the project directory:
-  ```bash
+   ```bash
      cd URL-Shortner
 
 3. Install the required dependencies:
-  ```bash
+   ```bash
      pip install -r requirements.txt
 
 4. Run the application:
-  ```bash
+   ```bash
      python app.py
 
 ## Usage
@@ -49,6 +47,6 @@ To set up the project locally, follow these steps:
 
 ##  Feel free to customize any sections to better fit your project’s specifics!
 
-=======
-A Python-based URL shortener that transforms long links into concise, shareable URLs. Featuring a user-friendly interface and link tracking, this project makes it easy to manage and monitor your links efficiently.
->>>>>>> 3dd3e7218aff88f60518749828ef407bc7721875
+
+->A Python-based URL shortener that transforms long links into concise, shareable URLs. Featuring a user-friendly interface and link tracking, this project makes it easy to manage and monitor your links efficiently.
+
