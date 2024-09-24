@@ -23,19 +23,19 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/satyam-64136/URL-Shortner.git
+      git clone https://github.com/satyam-64136/URL-Shortner.git
 
 2. Navigate to the project directory:
   ```bash
-    cd URL-Shortner
+     cd URL-Shortner
 
 3. Install the required dependencies:
   ```bash
-    pip install -r requirements.txt
+     pip install -r requirements.txt
 
 4. Run the application:
   ```bash
-    python app.py
+     python app.py
 
 ## Usage
 
