@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="shortener">
+        <h1>URL Shortener</h1>
+        <form id="form" method="POST" action="/">
+            <input type="text" name="original_url" id="original_url" placeholder="Paste your link here" required autocomplete="off">
+            <input type="submit" value="Shorten URL">
+        </form>
+
+        {% if short_url %}
+        <div id="result">
+            <div id="url-container">
+                <input type="text" id="short-url" value="{{ request.host }}/{{ short_url }}" readonly>
+                <button id="copy-btn" onclick="copyToClipboard()">Copy</button>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            // Get the shortened URL input field
+            const shortUrlField = document.getElementById('short-url');
+            
+            // Select the text field
+            shortUrlField.select();
+            shortUrlField.setSelectionRange(0, 99999); // For mobile devices
+            
+            // Copy the text inside the text field
+            document.execCommand('copy');
+            
+            // Optional: Alert the user that the URL is copied
+            alert("Copied the URL: " + shortUrlField.value);
+        }
+    </script>
+</body>
+</html>

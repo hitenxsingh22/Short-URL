@@ -1,0 +1,102 @@
+/* Full-page background and general body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('BG.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the URL shortener */
+#shortener {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.534); /* Darker background for better contrast */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.541);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(110, 110, 110, 0.534);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Styling for the heading */
+h1 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Styling the form inputs */
+input[type="text"], input[type="submit"] {
+  padding: 10px;
+  margin: 10px auto;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Lighter border for inputs */
+  font-size: 16px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  background-color: #222121bb; /* Dark button for contrast */
+  color: white;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #555; /* Slightly lighter on hover */
+}
+
+/* URL container for short URL and copy button */
+#url-container {
+  position: relative;
+  margin-top: 20px;
+  width: 90%;  /* Adjust width for better alignment */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Shortened URL input */
+#short-url {
+  width: 100%;
+  padding-right: 50px;  /* Reserve space for the copy button */
+  background-color: #f0f0f0; /* Light grey background for input */
+  color: #333; /* Dark text color */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 40px;  /* Height of input */
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+/* Copy button styling */
+#copy-btn {
+  position: absolute;
+  right: 10px;  /* Hover over the right edge of the input */
+  top: 50%;
+  transform: translateY(-50%);  /* Vertically center the button */
+  height: 30px;  /* Slightly smaller than input field height */
+  padding: 0 15px;
+  background-color: #363636; /* Dark grey for copy button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#copy-btn:hover {
+  background-color: #888; /* Slightly lighter on hover */
+}
